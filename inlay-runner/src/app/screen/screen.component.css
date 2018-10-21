@@ -1,0 +1,35 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.screen-wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#screen {
+    position: absolute;
+    width: 750px;
+    height: 1334px;
+    background-color: white;
+    z-index: 1;
+    transform-origin: top left;
+    margin-top: 25px;
+}
+
+/* すべてのコンポーネントに共通するスタイル */
+:host >>> .inlay-component {
+    display: block;
+    position: absolute !important;
+}
+/* コンポーネントのクリックアニメーションなどを無効化するための要素 */
+:host >>> .inlay-component-preview:after{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top:0; left:0; right:0; bottom:0;
+}
+/* 選択された状態のコンポーネント */
+:host >>> .inlay-component-focused {
+    outline: 1px solid #008FFF;
+}
