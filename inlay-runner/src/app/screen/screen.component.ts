@@ -29,12 +29,12 @@ export class ScreenComponent implements OnInit {
    * ScreenComponentのルート要素
    *
    */
-  private element: JQuery;
+  private element: any;
   /**
    * Screenの描画療育の要素
    *
    */
-  private screen: JQuery;
+  private screen: any;
 
   private componentsData: { [key: string]: ComponentData } = null
 

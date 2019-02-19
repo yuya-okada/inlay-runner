@@ -1,3 +1,4 @@
+import { InlayDirective } from './inlay-directive';
 import { ComponentsDataService } from './components-data.service';
 import { DirectivesDataService } from './directives-data.service';
 import { ScreenComponent } from './screen/screen.component';
@@ -9,6 +10,8 @@ import { ProjectManagerService } from './project-manager.service';
 import { SceneManagerService } from './scene-manager.service';
 import { HttpModule } from '@angular/http';
 import { ScriptsManagerService } from './scripts-manager.service';
+import { InlayDirectiveProperty } from './inlay-directive-property';
+import { InlayComponent } from './inlay-component';
 
 @NgModule({
   imports: [
@@ -30,20 +33,9 @@ import { ScriptsManagerService } from './scripts-manager.service';
   bootstrap: [
     InlayButtonComponent
   ],
-  exports:[
-    ScreenComponent,
-    
+  exports: [
+    ScreenComponent
+
   ]
 })
 export class InlayRunnerModule { }
-
-
-
-
-
-
-
-
-
-
-

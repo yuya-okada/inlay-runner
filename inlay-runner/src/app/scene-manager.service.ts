@@ -6,6 +6,7 @@ import { InlayComponent } from "./inlay-component";
 import { ComponentsDataService, ComponentData } from "./components-data.service";
 import { Uuid } from './uuid';
 import { ProjectManagerService } from './project-manager.service';
+declare const $: any;
 
 @Injectable()
 export class SceneManagerService {

@@ -1,6 +1,6 @@
 {
   "name": "inlay-runner",
-  "version": "0.0.1",
+  "version": "0.2.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "packagr": "ng-packagr -p package.json",
-    "publish": "ng-packagr -p package.json; cd dist;npm pack; cd ../; npm publish"
+    "publish": "ng-packagr -p package.json; cd dist;npm pack; cd ../; npm publish dist"
   },
   "dependencies": {
     "@angular/animations": "^6.1.10",
